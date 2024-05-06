@@ -1,2 +1,0 @@
-# react-lessons
-react-lessons
