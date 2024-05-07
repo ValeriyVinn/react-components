@@ -1,13 +1,12 @@
-// import ProductList from "./components/ProductList";
-// import { products } from "./assets/products";
-// import Title from "./components/ui/Title";
+import React from "react";
+import Counter from "./components/Counter/Counter";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="bg-white">
-      <div>
-        
-      </div>
-    </div>
+    <>
+      <Counter />
+    </>
   );
-}
+};
+
+export default App;
