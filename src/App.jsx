@@ -4,7 +4,7 @@ import Counter from "./components/Counter/Counter";
 const App = () => {
   return (
     <>
-      <Counter />
+      <Counter initialValue={1234}/>
     </>
   );
 };

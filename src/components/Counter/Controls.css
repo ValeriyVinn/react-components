@@ -1,11 +1,4 @@
-.Counter {
-  width: 400px;
-  padding: 10px;
-  border: 1px solid darkcyan;
-  text-align: center;
-}
-
-/* .Counter__controls > button {
+.Counter__controls > button {
   border: none;
   padding: 10px 15px;
   background-color: darkcyan;
@@ -22,13 +15,4 @@
 
 .Counter__controls > button:active {
   box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
-} */
-
-.Counter__value {
-  margin-right: 15px;
-  margin-left: 15px;
-  font-size: 64px;
-  font-family: monospace;
-  text-align: center;
-  color: darkcyan;
 }
