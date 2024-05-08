@@ -2,7 +2,7 @@
   "name": "fson-74",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ValeriyVinn/react-components.git",
+  "homepage": "https://valeriyvinn.github.io/react-components",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
