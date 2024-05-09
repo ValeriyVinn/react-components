@@ -1,13 +1,11 @@
-.Counter {
+.Dropdown {
+  position: relative;
   width: 400px;
   padding: 20px;
   border: 1px solid darkcyan;
-  text-align: center;
-  margin-bottom: 20px;
-
 }
 
-/* .Counter__controls > button {
+.Dropdown > button {
   border: none;
   padding: 10px 15px;
   background-color: darkcyan;
@@ -22,15 +20,17 @@
   transition: box-shadow 250ms linear;
 }
 
-.Counter__controls > button:active {
+.Dropdown > button:active {
   box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
-} */
+}
 
-.Counter__value {
-  margin-right: 15px;
-  margin-left: 15px;
-  font-size: 64px;
-  font-family: monospace;
+.Dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px 0px ;
   text-align: center;
-  color: darkcyan;
+  background-color: teal;
+  color: white;
 }
