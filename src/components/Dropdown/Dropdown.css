@@ -3,12 +3,16 @@
   width: 400px;
   padding: 20px;
   border: 1px solid darkcyan;
+  border-radius: 5px;
+
+  margin-bottom: 20px;
 }
 
 .Dropdown > button {
   border: none;
   padding: 10px 15px;
   background-color: darkcyan;
+  border-radius: 5px;
   color: #fff;
   font-weight: 500;
   margin-left: 5px;
