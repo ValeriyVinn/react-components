@@ -1,5 +1,8 @@
 .TodoList {
-  width: 600px;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid darkcyan;
+  border-radius: 5px;
 }
 
 .TodoList__item {
@@ -8,10 +11,38 @@
   justify-content: space-between;
   padding: 20px;
   border: 1px solid black;
+  margin-bottom: 5px;
+  border: 1px solid darkcyan;
+  border-radius: 3px;
 }
 
 .TodoList__text {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 10px;
+  color: darkcyan;
+}
+
+.TodoList__title {
+  color: darkcyan
+}
+
+.TodoList__button {
+  border: none;
+  padding: 10px 15px;
+  background-color: darkcyan;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+  transition: box-shadow 250ms linear;
+}
+
+.TodoList__button:active {
+  box-shadow: 2px 5px 2px 0 rgb(0 0 0 / 0.5);
 }

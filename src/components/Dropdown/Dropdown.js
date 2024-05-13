@@ -33,7 +33,7 @@ class Dropdown extends Component {
         {/* <button type="button" className="Dropdown__toggle" onClick={this.hide}>
           Hide
         </button> */}
-        {this.state.visible && <div className="Dropdown__menu">Menu</div>}
+        {this.state.visible && <div className="Dropdown__menu">I want to work</div>}
       </div>
     );
   }

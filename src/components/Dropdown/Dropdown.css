@@ -9,6 +9,7 @@
 }
 
 .Dropdown > button {
+  width: 60px;
   border: none;
   padding: 10px 15px;
   background-color: darkcyan;
