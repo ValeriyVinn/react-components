@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Counter from './components/Counter';
 import Dropdown from './components/Dropdown';
 import ColorPicker from './components/ColorPicker';
-import TodoList from './components/TodoList/TodoList';
+import TodoList from './components/TodoList';
 import initialTodos from './assets/todo.json';
 import Form from './components/Form/';
 
@@ -26,11 +26,9 @@ class App extends Component {
       todos: prevState.todos.filter(todo => todo.id !== todoId),
     }));
 
-formSubmitHandler = data => {
-  console.log(data)
-}
-
- 
+  formSubmitHandler = data => {
+    console.log(data);
+  };
 
   render() {
     const { todos } = this.state;
@@ -45,18 +43,17 @@ formSubmitHandler = data => {
       <>
         <h1 className="title">State of Component</h1>
 
-        <Form onSubmit={this.formSubmitHandler}/>
+        <Form onSubmit={this.formSubmitHandler} />
         {/* <Form onSubmit={this.formSubmitHandler}/> */}
 
         <Counter initialValue={1234} />
         <Dropdown />
         <ColorPicker options={colorPickerOptions} />
-
-        <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
         <div>
           <p>Total: {totalTodoCount}</p>
           <p>Number of completed: {completedTodoCount}</p>
         </div>
+        <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
       </>
     );
   }
