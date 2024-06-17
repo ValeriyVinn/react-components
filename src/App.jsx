@@ -20,11 +20,17 @@ const colorPickerOptions = [
 class App extends Component {
   state = {
     todos: initialTodos,
+    inputValue: ""
   };
   deleteTodo = todoId =>
     this.setState(prevState => ({
       todos: prevState.todos.filter(todo => todo.id !== todoId),
     }));
+
+    handleInputChange = event => {
+      // console.log(event.currentTarget.value)
+      this.setState({inputValue: event.currentTarget.value})
+    }
 
   formSubmitHandler = data => {
     console.log(data);
@@ -42,6 +48,8 @@ class App extends Component {
     return (
       <>
         <h1 className="title">State of Component</h1>
+
+<input type="text" value={this.state.inputValue} onChange={this.handleInputChange}/>
 
         <Form onSubmit={this.formSubmitHandler} />
         {/* <Form onSubmit={this.formSubmitHandler}/> */}
