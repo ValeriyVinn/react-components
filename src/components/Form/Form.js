@@ -105,7 +105,7 @@ class Form extends Component {
           Agreed
         </label>
 
-        <button type="submit" disabled={!this.state.licence} className="Form__button">
+            <button type="submit" disabled={!this.state.licence} className="Form__button">
           Send
         </button>
       </form>
